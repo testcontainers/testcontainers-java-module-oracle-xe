@@ -1,0 +1,37 @@
+language: java
+jdk:
+  - oraclejdk8
+
+#env:
+#  global:
+#    - secure: "AogDqsCHKDsADJvsxoOWBjGme3lPSOeAO5Ok++FHEj3tQqbnaR6ImHpFIcnJsjUbcKVMR06JyShHT7oq2uggVhkWqLftFVGbOwTrsUc4lJDiuB5dnCatkkEL8hVAceB7gZlbEWLFf3Nui5+GpHZnfTnaix/hFoHLA2spcF4LpCS0ATAh5i5U2eOthwtemPKkIAAvkMyu26cF64zMTQe3w/6bdcqHPBg29jF0e3ujg71UytNBsX/RY5ynNlKpvTst3jSeCQAZBWouPW7sa+AMQJvBcLcEQTBvJ6l4mTY8lVBNiL8PIL0a4wsMKxhWgKIsEuTN8Y50TIy0OyYvDeSjZrLWUurlOrjvBG3s3PUro5G3LxJ8v738W9z7lpa22V12MwZmLBncH1WDxB5pjvZzqVwmIBICHP9WHA7yKzalLO0rmMxIdCW980/60YWRM8A8X15f6FUmmltZfOOtgPLkyV6hruu2tjQNGvDjKpUbaYCURV3o83OAjdFHgCbEuc6YCbuvOwiZUw/9R6/kjjEveSLBhg+lTSdXIvogN8+SUjSkMpT9OLOzWrErm76HPI12Zl2Xb6WMLKSEcBsDhniGnqT7PejK39DW5vCYQ24/abyDJZ8qTcOuBPyWvdgEGedSSYomufC6Lvp6Mk7zJE2vLOx3hOWjNB9iLw4ktscsNFQ="
+#    - # ^^ OSSRH_JIRA_USERNAME
+#    - secure: "csp53JQEgunGZ7X+O/+qjRFKxm1xnfBTfKUyiVaaW00ZoMdiOS87Y09d8byde3LUN3ZI/aPsv3TpGQJV+nq3TbAkC+J3XH+tUtFAUuH9vLzYL8z5Zn1U95cPLcpzqJl3Y6XYaI1onKb6twXtYDnbd2LD9PvEQiuKEnRpDCGUqYNW3OnVt2tb3JM9dvVd7IAXYBTjXZjd0fc0sZh6mKwenvr4X7zf9N8rUKUSRnqHuHE6cJ3otogBZrjB0mwtvT9RKEE7yQ2KKyg2Ok7JJZt6DSY5U1nHxCYhXoqmJFkraEmmXDP6AZ1GGh2mXDNM6n2x6XAc5/IqiW3RF1DwmMNYDHzTCY/6SIvZpsuip2UmZtkAkrHKNLaKz/aINqROPR+I1djzaA8L54pOlBahgd/7jzY8qwXjJMMxOUklFRNreEtWkMeEXknLzpH48uomTA+u2cooVhgbo/77DTlZPrSzkQVlt0OMxYGm5Sg6Jrahb7ndZuInLUPufI04KKgpKymj0F8pm6qmlmnamz32gLn0ZuNMcG0YAt/iKzwZ01iK5oTIcgwI0GBaHp0gDAczgxnh/pEk/NF0FRpLccfIXcEQYimukB6O8KQyaWJgRL1C0gzn4rmXu3zQn8RCGcqdcL7t/5widFnguGKEhoOBCfyD8YFEd/LzS3SVW+x7KI7tWUs="
+#    - # ^^ OSSRH_JIRA_PASSWORD
+#    - secure: "LViEsZ7OsadSmUygIn28De31wvu7L+lOZMEZjSORX5dx+Vd1bVGM8nE57E2IWNFrw1vxpC0ytGJAncN9dihgnsh3bJqOO35aG19pnP8pIL7Rjb6Urt+w39eXCQm65d9aUUbhVur7Vea2t1gNsrE/jUYnxviVTqN05OpOyFgH0m8trUc6CE2a1fe9dp/FVr1ODolWC2XXM2Anhz9/CcC0YSLWPfQhVCFWWzW9akACXbk+yJvjo3ZoozLjziVnQsWPr764sUWnSpoqJlTHrnoWuf5ZkOU6BkYpfbQBKU7DhoZhaf/4kZhx398CGmNfkjeldpFk4TWfYIOwAMq52naoMSbJ1aBjYM35VerQHuLQrwfbmGEt/l13bpY9ufhuSYSx+eoAl1Cql7VYmne7Szkww7vz8j9J+v9/qkUaQEQZWeLNnRdRYitCdf9UwsKjz26RCWvBdn+fDk56l7ujIHMJ/y75ntwhhMyTz+KbC3chHJcPAel0x5zJbMn5esChx2NOwcrYdtCps37hbjeuT3OEJarZLZ1JnCpzbJ5cwUzqUZRpcaN+2orlNnOD8ZYZWPnIlJPHZUDNBeJ6vWwK8XtSu5xcUYD1Or5ZHE8KSm8juZ187ordpvSrct/gW9AMWMPwZzNujEcPNWd+WmyGS2ReTDjZks+w2cYHuNkhl4ccNLU="
+#    - # ^^ GPG_KEY_NAME
+#    - secure: "XEE8QbHQO0cVMSHHz26Bg5dSD0ji36Qhbq5A0IqHRRabgpix1nTFjxoTYMlcxQlbCdXt6mYbHJhdZaJItkoV4zNqVgHqh9dkl/uhl/ksTfO4ChlOdRFzL9HFEn2F0Yf1DqylhAA5bzaYq6tS/DYkX1QCs+9TMXyLjrktXL+hw7bH9LMrkpIMyzugdcy8eWShQrdEWlr8SJ1mMLa1g9vg0aEmX/V9updxnGD2VlLu+mnBzLbdSvL6OfFWPDijVoRKAqBl2spuFowtm1Ova7G8fJ89BRkFZGXWFcNpZIcOritphxj+mYq8FJQNPKNEfCAlq2vKMDtXSHmS6ZydpLdNMsobPyxaRSWc8E73WwNGwSdkqwkreTBBWvbWlq9mdtq9pEZtiCoV1MdoaDucjfufxgShFPlA4pWu0NSDfO6A853zGMZIDm+k6F/yik+nZ1MkMb/Q/Geqa7+knASJqtbkccJrIj/7jEl0erHjLnEw5KJE0H+vB7I/vH2mRSSUQ3UZXWewwFHklMguJldEIS1E6TcHfr+5dUMn4GURold0zAFrQUDKPr3+WnT0LTotdJSwx18IZjAUhLXiRlK+ZjH1U27HLsKRxhUfRivRcmK0YXWPxkiryvxVjZoBIE16oGnL6EaEPGBB1jlU3CPAKo77eLrn7GHV1fiu0N70u8qC1V0="
+#    - # ^^ GPG_PASSPHRASE
+
+sudo: required
+services:
+  - docker
+
+before_install:
+  - ./mvnw install -P !build-extras -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+script:
+  - ./mvnw -B -P !build-extras test
+
+deploy:
+  sudo: false
+  services: []
+  provider: script
+  script: release/deploy.sh
+  on:
+    tags: true
+    branch: master
+
+cache:
+  directories:
+    - '$HOME/.m2/repository'
