@@ -1,12 +1,15 @@
 package org.testcontainers.containers;
 
+import org.testcontainers.utility.TestcontainersConfiguration;
+
 /**
  * @author gusohal
  */
 public class OracleContainer extends JdbcDatabaseContainer {
 
     public static final String NAME = "oracle";
-    public static final String IMAGE = "wnameless/oracle-xe-11g";
+    public static final String IMAGE = TestcontainersConfiguration.getInstance()
+            .getProperties().getProperty("oracle.container.image","wnameless/oracle-xe-11g");
     private static final int ORACLE_PORT = 1521;
     private static final int APEX_HTTP_PORT = 8080;
 
