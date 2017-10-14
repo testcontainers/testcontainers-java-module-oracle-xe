@@ -23,6 +23,24 @@ public class SomeTest {
         ... create a connection and run test as normal
 ```
 
+## Dependency information
+
+### Maven
+
+```
+<dependency>
+    <groupId>org.testcontainers</groupId>
+    <artifactId>oracle-xe</artifactId>
+    <version>1.4.3</version>
+</dependency>
+```
+
+### Gradle
+
+```
+compile group: 'org.testcontainers', name: 'oracle-xe', version: '1.4.3'
+```
+
 ## License
 
 See [LICENSE](LICENSE).
