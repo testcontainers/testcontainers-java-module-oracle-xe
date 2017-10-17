@@ -14,7 +14,7 @@ Running Oracle XE as a stand-in for in a test:
 public class SomeTest {
 
     @Rule
-    public OracleContainer oracle = new Oracle XEContainer();
+    public OracleContainer oracle = new OracleContainer();
     
     @Test
     public void someTestMethod() {
