@@ -5,7 +5,7 @@ import org.testcontainers.utility.TestcontainersConfiguration;
 /**
  * @author gusohal
  */
-public class OracleContainer extends JdbcDatabaseContainer {
+public class OracleContainer<SELF extends JdbcDatabaseContainer<SELF>> extends JdbcDatabaseContainer<SELF> {
 
     public static final String NAME = "oracle";
     public static final String IMAGE = TestcontainersConfiguration.getInstance()
