@@ -21,6 +21,8 @@ before_install:
   - ./mvnw install -P !build-extras -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 
 script:
+  - netstat -plant
+  - lsof
   - ./mvnw -B -P !build-extras test
 
 deploy:
