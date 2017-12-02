@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## UNRELEASED
+### Changed
+- Implement self-typing for better fluent builders (#9)
+
 ## [1.4.3] - 2017-10-14
 ### Changed
 - Updated to depend upon with Testcontainers core library v1.4.3
