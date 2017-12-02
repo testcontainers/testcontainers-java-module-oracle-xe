@@ -19,6 +19,7 @@ public class OracleContainer<SELF extends JdbcDatabaseContainer<SELF>> extends J
 
     public OracleContainer(String dockerImageName) {
         super(dockerImageName);
+        this.setStartupAttempts(3);
     }
 
     @Override
