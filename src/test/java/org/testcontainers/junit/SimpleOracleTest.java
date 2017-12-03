@@ -5,6 +5,7 @@ import com.zaxxer.hikari.HikariDataSource;
 import org.junit.Rule;
 import org.junit.Test;
 import org.testcontainers.containers.OracleContainer;
+import org.zeroturnaround.exec.ProcessExecutor;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -16,6 +17,14 @@ import static org.rnorth.visibleassertions.VisibleAssertions.assertEquals;
  * @author gusohal
  */
 public class SimpleOracleTest {
+
+    public SimpleOracleTest() throws Exception {
+        // debugging
+        new ProcessExecutor("netstat", "-plant")
+            .redirectOutput(System.out)
+            .redirectError(System.err)
+                .execute();
+    }
 
     @Rule
     public OracleContainer oracle = new OracleContainer();
