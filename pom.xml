@@ -38,10 +38,16 @@
 
     <dependencies>
         <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>jdbc</artifactId>
-            <version>${project.parent.version}</version>
-        </dependency>
+       	    <groupId>com.github.testcontainers.testcontainers-java</groupId>
+       	    <artifactId>jdbc</artifactId>
+       	    <version>port-collision-test-SNAPSHOT</version>
+       	</dependency>
+        <dependency>
+       	    <groupId>com.github.testcontainers.testcontainers-java</groupId>
+       	    <artifactId>testcontainers</artifactId>
+       	    <version>port-collision-test-SNAPSHOT</version>
+       	</dependency>
+
 
         <!-- Database connection pool for testing -->
         <dependency>
@@ -70,6 +76,10 @@
         <repository>
             <id>atlassian-3rd-party</id>
             <url>https://maven.atlassian.com/3rdparty/</url>
+        </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
     </repositories>
 
